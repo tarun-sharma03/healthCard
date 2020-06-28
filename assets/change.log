@@ -1,0 +1,37 @@
+#############################################################################
+### HackJaipur- CodeMonk                                                  ###
+###                                                                       ###
+###    _______________________________________________________________    ###
+###   | ID  | Date of Starting  | Full Name        | Roll             |   ###
+###   |=====|===================|==================|==================|   ###
+###   |  1  | June 17, 2020     | Dipanshu Bhola   | Developer        |   ###
+###   |  2  | June 17, 2020     | Jayati Gumber    | Developer        |   ###
+###   |  3  | June 17, 2020     | Tarun Kr. Dixit  | Developer        |   ###
+###   |_____|___________________|__________________|__________________|   ###
+###                                                                       ###
+#############################################################################
+###                                                                       ###
+###   Please follow the following method for logging the db changes       ###
+###     ### Date -> (Developer ID)                                        ###
+###       ### Comments for performed changes (if any)                     ###
+###                                                                       ###
+#############################################################################
+#############################################################################
+
+### June 18, 2020 -> (3)
+CREATE TABLE `messages` ( `id` INT NOT NULL , `patientID` INT NOT NULL , `doctorID` INT NOT NULL , `subject` TEXT NOT NULL , `message` TEXT NOT NULL , `generatedAt` TIMESTAMP NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `messages` ADD `enabled` INT(1) NOT NULL DEFAULT '0' AFTER `generatedAt`;
+ALTER TABLE `messages` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT, add PRIMARY KEY (`id`);
+
+### June 18, 2020 -> (3)
+CREATE TABLE `doctors` ( `id` INT NOT NULL AUTO_INCREMENT , `hospitalID` INT NOT NULL , `fullName` TEXT NOT NULL , `phoneNumber` TEXT NOT NULL , `emailAddress` TEXT NOT NULL , `dob` TIMESTAMP NOT NULL , `address` TEXT NOT NULL , `fee` TEXT NOT NULL , `department` TEXT NOT NULL , `qualification` TEXT NOT NULL , `stateID` INT NOT NULL , `cityID` INT NOT NULL , `username` TEXT NOT NULL , `password` TEXT NOT NULL , `lastLogin` TIMESTAMP NULL DEFAULT NULL , `generatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `enabled` INT(1) NOT NULL DEFAULT '1' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+ALTER TABLE `doctors` ADD `gender` INT NOT NULL AFTER `dob`;
+
+### June 18, 2020 -> (3)
+CREATE TABLE `hospitals` ( `id` INT NOT NULL AUTO_INCREMENT , `hospitalName` TEXT NOT NULL , `phoneNumber` TEXT NOT NULL , `emailAddress` TEXT NOT NULL , `addressLine1` TEXT NOT NULL , `addressLine2` TEXT NOT NULL , `stateID` INT NOT NULL , `cityID` INT NOT NULL , `username` TEXT NOT NULL , `password` TEXT NOT NULL , `lastLogin` TIMESTAMP NULL DEFAULT NULL , `generatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `enabled` INT(1) NOT NULL DEFAULT '1' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+### June 17, 2020 -> (3)
+ALTER TABLE `patients` ADD `emergencyPhone` TEXT NOT NULL AFTER `phoneNumber`, ADD `bloodGroup` TEXT NOT NULL AFTER `emergencyPhone`, ADD `gender` INT NOT NULL AFTER `bloodGroup`;
+
+### June 17, 2020 -> (3)
+CREATE TABLE `patients` ( `id` INT NOT NULL AUTO_INCREMENT , `fullName` TEXT NOT NULL , `dob` TIMESTAMP NULL DEFAULT NULL , `phoneNumber` TEXT NOT NULL , `emailAddress` TEXT NOT NULL , `addressLine1` TEXT NOT NULL , `addressLine2` TEXT NOT NULL , `city` TEXT NOT NULL , `state` TEXT NOT NULL , `username` TEXT NOT NULL , `password` TEXT NOT NULL , `ongoingMedication` TEXT NOT NULL , `allergies` TEXT NOT NULL , `lastLoginAt` TIMESTAMP NULL DEFAULT NULL , `generatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `enabled` INT(1) NOT NULL DEFAULT '1' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
