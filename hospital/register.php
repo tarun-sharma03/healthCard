@@ -1,6 +1,4 @@
-<?php include "fxn.php";
-
-?>
+<?php include("$_SERVER[DOCUMENT_ROOT]/healthCard/hospital/fxn.php");?>
 <!doctype html>
 <html lang="en">
 
