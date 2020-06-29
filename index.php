@@ -95,14 +95,14 @@
 
 
   <!-- Modal for patient login -->
-      
+
     <div id="hospitalModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    
+
                 </div>
                 <div class="modal-body">
                   <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
@@ -110,11 +110,11 @@
                       <div class="col-md-12 mb-3">
                         <label class=""></label>
                       <a href="#">
-                        
+
                 <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
             </a>
-          
-          
+
+
                   </div>
                 </div>
                     <div class="form-group row">
@@ -123,7 +123,7 @@
                       <h2 class="center"> Hospital Login  </h2>
                   </div>
                 </div>
-                    
+
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName"><h2>User name</h2></label>
@@ -144,20 +144,20 @@
 
 
 
-                    
+
                     <div class="form-group row">
                        <div class="offset-md-0 col-md-6">
                            <button type="submit" class="btn btn-primary">
                                Login
                            </button>
                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
-                        
+
                        </div>
                    </div>
                    <br>
                 <br>
                 <div class="form-group row">
-                 <div class="offset-md-0 col-md-5"> 
+                 <div class="offset-md-0 col-md-5">
                 <label for=""></label>
                 <h2>Not A Registered Hospital ?</h2>
               </div>
@@ -173,12 +173,12 @@
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>
             </ul>
-        
+
             </div>
           </form>
           </div>
-               
-                
+
+
             </div>
         </div>
         </div>
@@ -192,7 +192,7 @@
                 <div class="modal-header">
                     <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    
+
                 </div>
                 <div class="modal-body">
                   <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
@@ -200,11 +200,11 @@
                       <div class="col-md-12 mb-3">
                         <label class=""></label>
                       <a href="#">
-                        
+
                 <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
             </a>
-          
-          
+
+
                   </div>
                 </div>
                     <div class="form-group row">
@@ -213,7 +213,7 @@
                       <h2 class="center"> Login Information </h2>
                   </div>
                 </div>
-                    
+
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName"><h2>User name</h2></label>
@@ -234,20 +234,20 @@
 
 
 
-                    
+
                     <div class="form-group row">
                        <div class="offset-md-0 col-md-6">
                            <button type="submit" class="btn btn-primary">
                                Login
                            </button>
                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
-                        
+
                        </div>
                    </div>
                    <br>
                 <br>
                 <div class="form-group row">
-                 <div class="offset-md-0 col-md-4"> 
+                 <div class="offset-md-0 col-md-4">
                 <label for=""></label>
                 <h2>Not A Registered User ?</h2>
               </div>
@@ -263,12 +263,12 @@
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>
             </ul>
-        
+
             </div>
           </form>
           </div>
-               
-                
+
+
             </div>
         </div>
         </div>
@@ -281,7 +281,7 @@
                 <div class="modal-header">
                     <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    
+
                 </div>
                 <div class="modal-body">
                   <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
@@ -289,11 +289,11 @@
                       <div class="col-md-12 mb-3">
                         <label class=""></label>
                       <a href="#">
-                        
+
                 <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
             </a>
-          
-          
+
+
                   </div>
                 </div>
                     <div class="form-group row">
@@ -302,7 +302,7 @@
                       <h2 class="center"> Doctor Login </h2>
                   </div>
                 </div>
-                    
+
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName"><h2>User name</h2></label>
@@ -323,20 +323,20 @@
 
 
 
-                    
+
                     <div class="form-group row">
                        <div class="offset-md-0 col-md-6">
                            <button type="submit" class="btn btn-primary">
                                Login
                            </button>
                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
-                        
+
                        </div>
                    </div>
                    <br>
                 <br>
                 <div class="form-group row">
-                 <div class="offset-md-0 col-md-4"> 
+                 <div class="offset-md-0 col-md-4">
                 <label for=""></label>
                 <h2>Not A Registered Doctor?</h2>
                 <br>
@@ -351,18 +351,18 @@
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>
             </ul>
-        
+
             </div>
           </form>
           </div>
-               
-                
+
+
             </div>
         </div>
         </div>
 
-    
-    
+
+
 
 
 
@@ -582,5 +582,6 @@
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
+
 
 </html>
