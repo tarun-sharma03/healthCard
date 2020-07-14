@@ -5,12 +5,11 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>CodeMonk</title>
+  <title>HackJaipur CodeMonk</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="site.webmanifest" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
-
   <!-- CSS here -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
@@ -42,7 +41,6 @@
     </div>
   </div>
   <!-- Preloader Start End -->
-
   <header>
       <!-- Header Start -->
     <div class="header-area">
@@ -82,7 +80,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Mobile Menu -->
             <div class="col-12">
               <div class="mobile_menu d-block d-lg-none"></div>
@@ -92,17 +89,13 @@
       </div>
       <!-- Header End -->
   </header>
-
-
-  <!-- Modal for hospital login -->
-      
+  <!-- Modal for patient login -->
     <div id="hospitalModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    
                 </div>
                 <div class="modal-body">
                   <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
@@ -110,11 +103,8 @@
                       <div class="col-md-12 mb-3">
                         <label class=""></label>
                       <a href="#">
-                        
                 <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
             </a>
-          
-          
                   </div>
                 </div>
                     <div class="form-group row">
@@ -123,7 +113,6 @@
                       <h2 class="center"> Hospital Login  </h2>
                   </div>
                 </div>
-                    
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName"><h2>User name</h2></label>
@@ -132,7 +121,6 @@
                                 Valid user name is required.
                             </div>
                         </div>
-
                         <div class="col-md-6 mb-3">
                             <label for="password"><h2>Password</h2></label>
                             <input type="password" class="form-control" name="password" id="password" placeholder="" value="" required>
@@ -141,26 +129,18 @@
                             </div>
                         </div>
                     </div>
-
-
-
-                    
                     <div class="form-group row">
-                       <div class="offset-md-0 col-md-3">
+                       <div class="offset-md-0 col-md-6">
                            <button type="submit" class="btn btn-primary">
                                Login
                            </button>
-                         </div>
-                         <div class="col-md-3">
-                       
                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
-                        
                        </div>
                    </div>
                    <br>
                 <br>
                 <div class="form-group row">
-                 <div class="offset-md-0 col-md-5"> 
+                 <div class="offset-md-0 col-md-5">
                 <label for=""></label>
                 <h2>Not A Registered Hospital ?</h2>
               </div>
@@ -168,7 +148,6 @@
                 <a href="hospital/register.php" role="button" class="btn btn-secondary btn-xs">Register Here!</a>
               </div>
             </div>
-
             <div class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">&copy; 2020 CodeMonk</p>
             <ul class="list-inline">
@@ -176,26 +155,19 @@
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>
             </ul>
-        
             </div>
           </form>
           </div>
-               
-                
             </div>
         </div>
         </div>
-
-
-<!--  modal for patient login -->
-
+<!--  modal for hospital login -->
 <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    
                 </div>
                 <div class="modal-body">
                   <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
@@ -203,11 +175,8 @@
                       <div class="col-md-12 mb-3">
                         <label class=""></label>
                       <a href="#">
-                        
                 <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
             </a>
-          
-          
                   </div>
                 </div>
                     <div class="form-group row">
@@ -216,7 +185,6 @@
                       <h2 class="center"> Login Information </h2>
                   </div>
                 </div>
-                    
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName"><h2>User name</h2></label>
@@ -225,7 +193,6 @@
                                 Valid user name is required.
                             </div>
                         </div>
-
                         <div class="col-md-6 mb-3">
                             <label for="password"><h2>Password</h2></label>
                             <input type="password" class="form-control" name="password" id="password" placeholder="" value="" required>
@@ -234,26 +201,18 @@
                             </div>
                         </div>
                     </div>
-
-
-
-                    
                     <div class="form-group row">
-                       <div class="offset-md-0 col-md-3">
+                       <div class="offset-md-0 col-md-6">
                            <button type="submit" class="btn btn-primary">
                                Login
                            </button>
-                         </div>
-                         <div class="offset-md-0 col-md-3">
-                       
                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
-                        
                        </div>
                    </div>
                    <br>
                 <br>
                 <div class="form-group row">
-                 <div class="offset-md-0 col-md-4"> 
+                 <div class="offset-md-0 col-md-4">
                 <label for=""></label>
                 <h2>Not A Registered User ?</h2>
               </div>
@@ -261,7 +220,6 @@
                 <a href="patient/userRegister.php" role="button" class="btn btn-secondary btn-xs">Register Here!</a>
               </div>
             </div>
-
             <div class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">&copy; 2020 CodeMonk</p>
             <ul class="list-inline">
@@ -269,17 +227,12 @@
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>
             </ul>
-        
             </div>
           </form>
           </div>
-               
-                
             </div>
         </div>
         </div>
-
-
 <!-- modal for doctor login -->
 <div id="doctorModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
@@ -287,7 +240,6 @@
                 <div class="modal-header">
                     <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    
                 </div>
                 <div class="modal-body">
                   <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
@@ -295,11 +247,8 @@
                       <div class="col-md-12 mb-3">
                         <label class=""></label>
                       <a href="#">
-                        
                 <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
             </a>
-          
-          
                   </div>
                 </div>
                     <div class="form-group row">
@@ -308,7 +257,6 @@
                       <h2 class="center"> Doctor Login </h2>
                   </div>
                 </div>
-                    
                     <div class="form-group row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName"><h2>User name</h2></label>
@@ -317,7 +265,6 @@
                                 Valid user name is required.
                             </div>
                         </div>
-
                         <div class="col-md-6 mb-3">
                             <label for="password"><h2>Password</h2></label>
                             <input type="password" class="form-control" name="password" id="password" placeholder="" value="" required>
@@ -326,32 +273,24 @@
                             </div>
                         </div>
                     </div>
-
-
-
-                    
                     <div class="form-group row">
-                       <div class="offset-md-0 col-md-3">
+                       <div class="offset-md-0 col-md-6">
                            <button type="submit" class="btn btn-primary">
                                Login
                            </button>
-                         </div>
-                         <div class="offset-md-0 col-md-3">
                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
-                        
                        </div>
                    </div>
                    <br>
                 <br>
                 <div class="form-group row">
-                 <div class="offset-md-0 col-md-6"> 
+                 <div class="offset-md-0 col-md-4">
                 <label for=""></label>
                 <h2>Not A Registered Doctor?</h2>
                 <br>
                 <label for=""><h2>Contact Your Hospital!!<h2></label>
               </div>
             </div>
-
             <div class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">&copy; 2020 CodeMonk</p>
             <ul class="list-inline">
@@ -359,21 +298,12 @@
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>
             </ul>
-        
             </div>
           </form>
           </div>
-               
-                
             </div>
         </div>
         </div>
-
-    
-    
-
-
-
   <main>
     <!--? slider Area Start-->
     <div class="slider-area position-relative">
@@ -396,8 +326,7 @@
                   <a href="#contact" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">
                     Contact Us <i class="ti-arrow-right"></i>
                   </a>
-
-                  <a href="https://www.covid19india.org/" target="_blank" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">
+                  <a href="https://www.worldometers.info/coronavirus/country/india/" target="_blank" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">
                     Corona Tracker <i class="ti-arrow-right"></i>
                   </a>
                 </div>
@@ -409,7 +338,6 @@
       </div>
     </div>
     <!-- slider Area End-->
-
     <!--? About Start-->
     <section id="about">
       <div class="about-area section-padding2">
@@ -448,7 +376,6 @@
       </div>
     </section>
     <!-- About  End-->
-
     <!--? All startups Start -->
     <div class="all-starups-area testimonial-area fix">
       <!-- left Contents -->
@@ -484,7 +411,6 @@
     </div>
     <!--All startups End -->
   </main>
-
   <footer id="contact">
     <!--? Footer Start-->
     <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.jpg">
@@ -497,7 +423,6 @@
                 <div class="footer-logo">
                   <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt="" height="75" width="200"></a>
                 </div>
-
               </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
@@ -510,8 +435,8 @@
                     </p>
                     <p class="info1">
                       Tarun Kumar Dixit <br>
-                      Ansh Garg <br>
-                      Taranjot Singh
+                      Jayati Gumber <br>
+                      Dipanshu Bhola
                     </p>
                   </div>
                 </div>
@@ -545,14 +470,11 @@
     </div>
     <!-- Footer End-->
   </footer>
-
   <!-- Scroll Up -->
   <div id="back-top">
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
   </div>
-
   <!-- JS here -->
-
   <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
   <!-- Jquery, Popper, Bootstrap -->
   <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
@@ -560,7 +482,6 @@
   <script src="./assets/js/bootstrap.min.js"></script>
   <!-- Jquery Mobile Menu -->
   <script src="./assets/js/jquery.slicknav.min.js"></script>
-
   <!-- Jquery Slick , Owl-Carousel Plugins -->
   <script src="./assets/js/owl.carousel.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
@@ -568,13 +489,11 @@
   <script src="./assets/js/wow.min.js"></script>
   <script src="./assets/js/animated.headline.js"></script>
   <script src="./assets/js/jquery.magnific-popup.js"></script>
-
   <!-- Date Picker -->
   <script src="./assets/js/gijgo.min.js"></script>
   <!-- Nice-select, sticky -->
   <script src="./assets/js/jquery.nice-select.min.js"></script>
   <script src="./assets/js/jquery.sticky.js"></script>
-
   <!-- counter , waypoint -->
   <script src="./assets/js/jquery.counterup.min.js"></script>
   <script src="./assets/js/waypoints.min.js"></script>
@@ -585,10 +504,8 @@
   <script src="./assets/js/jquery.validate.min.js"></script>
   <script src="./assets/js/mail-script.js"></script>
   <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-
   <!-- Jquery Plugins, main Jquery -->
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
