@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>HackJaipur CodeMonk</title>
+  <title>CodeMonk</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="site.webmanifest" />
@@ -94,7 +94,7 @@
   </header>
 
 
-  <!-- Modal for patient login -->
+  <!-- Modal for hospital login -->
       
     <div id="hospitalModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
@@ -146,10 +146,13 @@
 
                     
                     <div class="form-group row">
-                       <div class="offset-md-0 col-md-6">
+                       <div class="offset-md-0 col-md-3">
                            <button type="submit" class="btn btn-primary">
                                Login
                            </button>
+                         </div>
+                         <div class="col-md-3">
+                       
                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
                         
                        </div>
@@ -184,7 +187,7 @@
         </div>
 
 
-<!--  modal for hospital login -->
+<!--  modal for patient login -->
 
 <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
@@ -236,10 +239,13 @@
 
                     
                     <div class="form-group row">
-                       <div class="offset-md-0 col-md-6">
+                       <div class="offset-md-0 col-md-3">
                            <button type="submit" class="btn btn-primary">
                                Login
                            </button>
+                         </div>
+                         <div class="offset-md-0 col-md-3">
+                       
                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
                         
                        </div>
@@ -325,10 +331,12 @@
 
                     
                     <div class="form-group row">
-                       <div class="offset-md-0 col-md-6">
+                       <div class="offset-md-0 col-md-3">
                            <button type="submit" class="btn btn-primary">
                                Login
                            </button>
+                         </div>
+                         <div class="offset-md-0 col-md-3">
                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
                         
                        </div>
@@ -336,7 +344,7 @@
                    <br>
                 <br>
                 <div class="form-group row">
-                 <div class="offset-md-0 col-md-4"> 
+                 <div class="offset-md-0 col-md-6"> 
                 <label for=""></label>
                 <h2>Not A Registered Doctor?</h2>
                 <br>
@@ -389,7 +397,7 @@
                     Contact Us <i class="ti-arrow-right"></i>
                   </a>
 
-                  <a href="https://www.worldometers.info/coronavirus/country/india/" target="_blank" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">
+                  <a href="https://www.covid19india.org/" target="_blank" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">
                     Corona Tracker <i class="ti-arrow-right"></i>
                   </a>
                 </div>
@@ -502,8 +510,8 @@
                     </p>
                     <p class="info1">
                       Tarun Kumar Dixit <br>
-                      Jayati Gumber <br>
-                      Dipanshu Bhola
+                      Ansh Garg <br>
+                      Taranjot Singh
                     </p>
                   </div>
                 </div>
