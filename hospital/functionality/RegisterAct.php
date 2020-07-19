@@ -11,7 +11,7 @@ if (isset($_POST["submit"])) {
     $city = $_POST["city"];
     $username = $email;
     $password = $phone;
-    $res = doThis("INSERT INTO `hospitals`( `hospitalName`, `emailAddress`, `addressLine1`, `addressLine2`, `contactNumber`, `stateId`, `cityId`,`username`,`password`, `createdAt`) 
+    $res = doThis("INSERT INTO `hospitals`( `hospitalName`, `emailAddress`, `addressLine1`, `addressLine2`, `phoneNumber`, `stateID`, `cityID`,`username`,`password`, `createdAt`) 
     VALUES ('$name','$email','$address1','$address2','$phone','$state','$city','$username','$password',CURRENT_TIMESTAMP()) ");
 
     if ($res) {

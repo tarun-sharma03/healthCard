@@ -112,7 +112,7 @@ $res = $res[0];
                                     <strong>Contact :</strong>
                                 </div>
                                 <div class="col-4">
-                                    <span><?php echo $res['contactNumber']; ?> </span>
+                                    <span><?php echo $res['phoneNumber']; ?> </span>
                                     <!-------------------php---------------------------->
                                 </div>
                             </div>

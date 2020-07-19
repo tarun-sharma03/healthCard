@@ -25,11 +25,12 @@ if (isset($_POST["submit"])) {
 ?>
         <script>
             alert("Email Address Already Exists!!");
-            window.location = "../userRegister.php";
+            window.location = "../index.php";
         </script>
         <?php
     } else {
-        $temp_query = "INSERT INTO `patients`(`fullName`, `dob`, `phoneNumber`, `emergencyPhone`, `bloodGroup`, `gender`, `emailAddress`, `addressLine1`, `addressLine2`, `city`, `state`, `username`, `password`, `ongoingMedication`, `allergies`, `generatedAt`) VALUES ('$name','$dob','$phone','$e_phone','$blood','$gender','$email','$add1','$add2','$city','$state','$username','$password','$medication','$allergy',CURRENT_TIMESTAMP()) ";
+        $temp_query = "INSERT INTO `patients`(`fullName`, `dob`, `phoneNumber`, `emergencyPhone`, `bloodGroup`, `gender`, `emailAddress`, `addressLine1`, `addressLine2`, `cityID`, `stateID`, `username`, `password`, `ongoingMedication`, `allergies`, `generatedAt`) 
+        VALUES ('$name','$dob','$phone','$e_phone','$blood','$gender','$email','$add1','$add2','$city','$state','$username','$password','$medication','$allergy',CURRENT_TIMESTAMP()) ";
         $query = mysqli_query($con, $temp_query);
         if ($query) {
         ?>
@@ -42,7 +43,7 @@ if (isset($_POST["submit"])) {
         ?>
             <script>
                 alert("Some Technical Error!!");
-                window.location = "../index.php";
+                window.location = "../userRegister.php";
             </script>
 <?php
         }

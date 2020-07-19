@@ -21,3 +21,9 @@
 ### July 19, 2020 -> (3)
 CREATE TABLE `hospitals` ( `id` INT NOT NULL AUTO_INCREMENT , `hospitalName` TEXT NOT NULL , `emailAddress` TEXT NOT NULL , `addressLine1` TEXT NOT NULL , `addressLine2` TEXT NOT NULL , `contactNumber` TEXT NOT NULL , `stateId` INT NOT NULL , `cityId` INT NOT NULL , `createdAt` DATE NULL DEFAULT CURRENT_TIMESTAMP , `lastLoginAt` DATE NULL DEFAULT NULL , `enabled` INT(1) NOT NULL DEFAULT '1' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
 ALTER TABLE `hospitals` ADD `username` TEXT NOT NULL AFTER `contactNumber`, ADD `password` TEXT NOT NULL AFTER `username`; 
+CREATE TABLE `patients` ( `id` INT NOT NULL AUTO_INCREMENT , `fullName` TEXT NOT NULL , `dob` TIMESTAMP NULL DEFAULT NULL , `phoneNumber` TEXT NOT NULL , `emergencyPhone` TEXT NOT NULL , `bloodGroup` TEXT NOT NULL , `gender` INT NOT NULL , `emailAddress` TEXT NOT NULL , `addressLine1` TEXT NOT NULL , `addressLine2` TEXT NOT NULL , `cityID` INT NOT NULL , `stateID` INT NOT NULL , `username` TEXT NOT NULL , `password` TEXT NOT NULL , `ongoingMedication` TEXT NOT NULL , `allergies` TEXT NOT NULL , `generatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `lastLoginAt` TIMESTAMP NULL DEFAULT NULL , `enabled` INT(1) NOT NULL DEFAULT '1' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+ALTER TABLE `hospitals` CHANGE `createdAt` `createdAt` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP;
+ALTER TABLE `hospitals` CHANGE `lastLoginAt` `lastLoginAt` TIMESTAMP NULL DEFAULT NULL;
+ALTER TABLE `hospitals` CHANGE `stateId` `stateID` INT(11) NOT NULL; 
+ALTER TABLE `hospitals` CHANGE `cityId` `cityID` INT(11) NOT NULL;
+ALTER TABLE `hospitals` CHANGE `contactNumber` `phoneNumber` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL;
