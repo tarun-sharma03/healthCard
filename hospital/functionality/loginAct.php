@@ -13,7 +13,7 @@ if (isset($_POST["submit"])) {
 ?>
         <script>
             alert("Login Successful!!");
-            window.location = "../dashboard.php";
+            window.location = "../../hospital dashboard/index.html";
         </script>
     <?php
     } else {

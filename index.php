@@ -44,7 +44,7 @@
   <!-- Preloader Start End -->
 
   <header>
-      <!-- Header Start -->
+    <!-- Header Start -->
     <div class="header-area">
       <div class="main-header header-sticky">
         <div class="container-fluid">
@@ -94,70 +94,74 @@
   </header>
 
 
-  <!-- Modal for patient login -->
+  <!-- Modal for hospital login -->
 
-    <div id="hospitalModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+  <div id="hospitalModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
 
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" method="POST" action="hospital/functionality/loginAct.php">
+            <div class="form-group row">
+              <div class="col-md-12 mb-3">
+                <label class=""></label>
+                <a href="#">
+
+                  <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
+                </a>
+
+
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-6 mb-3">
+                <label class=""></label>
+                <h2 class="center"> Hospital Login </h2>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">
+                  <h2>User name</h2>
+                </label>
+                <input type="text" name="userName" class="form-control" id="userName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid user name is required.
                 </div>
-                <div class="modal-body">
-                  <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
-                    <div class="form-group row">
-                      <div class="col-md-12 mb-3">
-                        <label class=""></label>
-                      <a href="#">
+              </div>
 
-                <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
-            </a>
-
-
-                  </div>
+              <div class="col-md-6 mb-3">
+                <label for="password">
+                  <h2>Password</h2>
+                </label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid password is required.
                 </div>
-                    <div class="form-group row">
-                      <div class="col-md-6 mb-3">
-                        <label class=""></label>
-                      <h2 class="center"> Hospital Login  </h2>
-                  </div>
-                </div>
-
-                    <div class="form-group row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName"><h2>User name</h2></label>
-                            <input type="text" name="userName" class="form-control" id="userName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid user name is required.
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="password"><h2>Password</h2></label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid password is required.
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
 
 
 
 
-                    <div class="form-group row">
-                       <div class="offset-md-0 col-md-6">
-                           <button type="submit" class="btn btn-primary">
-                               Login
-                           </button>
-                           <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
+            <div class="form-group row">
+              <div class="offset-md-0 col-md-6">
+                <button type="submit" name="submit" class="btn btn-primary">
+                  Login
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
 
-                       </div>
-                   </div>
-                   <br>
-                <br>
-                <div class="form-group row">
-                 <div class="offset-md-0 col-md-5">
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-group row">
+              <div class="offset-md-0 col-md-5">
                 <label for=""></label>
                 <h2>Not A Registered Hospital ?</h2>
               </div>
@@ -167,87 +171,93 @@
             </div>
 
             <div class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; 2020 CodeMonk</p>
-            <ul class="list-inline">
+              <p class="mb-1">&copy; 2020 CodeMonk</p>
+              <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Privacy</a></li>
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>
-            </ul>
+              </ul>
 
             </div>
           </form>
-          </div>
+        </div>
 
 
+      </div>
+    </div>
+  </div>
+
+
+  <!--  modal for patient login -->
+  <!-- use correct comments damn it -->
+
+  <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate method="POST" action="#">
+            <div class="form-group row">
+              <div class="col-md-12 mb-3">
+                <label class=""></label>
+                <a href="#">
+
+                  <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
+                </a>
+
+
+              </div>
             </div>
-        </div>
-        </div>
+            <div class="form-group row">
+              <div class="col-md-6 mb-3">
+                <label class=""></label>
+                <h2 class="center"> Login Information </h2>
+              </div>
+            </div>
 
-
-<!--  modal for hospital login -->
-
-<div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-
+            <div class="form-group row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">
+                  <h2>User name</h2>
+                </label>
+                <input type="text" name="userName" class="form-control" id="userName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid user name is required.
                 </div>
-                <div class="modal-body">
-                  <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
-                    <div class="form-group row">
-                      <div class="col-md-12 mb-3">
-                        <label class=""></label>
-                      <a href="#">
+              </div>
 
-                <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
-            </a>
-
-
-                  </div>
+              <div class="col-md-6 mb-3">
+                <label for="password">
+                  <h2>Password</h2>
+                </label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid password is required.
                 </div>
-                    <div class="form-group row">
-                      <div class="col-md-6 mb-3">
-                        <label class=""></label>
-                      <h2 class="center"> Login Information </h2>
-                  </div>
-                </div>
-
-                    <div class="form-group row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName"><h2>User name</h2></label>
-                            <input type="text" name="userName" class="form-control" id="userName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid user name is required.
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="password"><h2>Password</h2></label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid password is required.
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
 
 
 
 
-                    <div class="form-group row">
-                       <div class="offset-md-0 col-md-6">
-                           <button type="submit" class="btn btn-primary">
-                               Login
-                           </button>
-                           <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
+            <div class="form-group row">
+              <div class="offset-md-0 col-md-6">
+                <button type="submit" class="btn btn-primary">
+                  Login
+                </button>
 
-                       </div>
-                   </div>
-                   <br>
-                <br>
-                <div class="form-group row">
-                 <div class="offset-md-0 col-md-4">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
+
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-group row">
+              <div class="offset-md-0 col-md-4">
                 <label for=""></label>
                 <h2>Not A Registered User ?</h2>
               </div>
@@ -257,109 +267,115 @@
             </div>
 
             <div class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; 2020 CodeMonk</p>
-            <ul class="list-inline">
+              <p class="mb-1">&copy; 2020 CodeMonk</p>
+              <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Privacy</a></li>
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>
-            </ul>
+              </ul>
 
             </div>
           </form>
-          </div>
+        </div>
 
 
+      </div>
+    </div>
+  </div>
+
+
+  <!-- modal for doctor login -->
+  <div id="doctorModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
+            <div class="form-group row">
+              <div class="col-md-12 mb-3">
+                <label class=""></label>
+                <a href="#">
+
+                  <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
+                </a>
+
+
+              </div>
             </div>
-        </div>
-        </div>
+            <div class="form-group row">
+              <div class="col-md-6 mb-3">
+                <label class=""></label>
+                <h2 class="center"> Doctor Login </h2>
+              </div>
+            </div>
 
-
-<!-- modal for doctor login -->
-<div id="doctorModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-
+            <div class="form-group row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">
+                  <h2>User name</h2>
+                </label>
+                <input type="text" name="userName" class="form-control" id="userName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid user name is required.
                 </div>
-                <div class="modal-body">
-                  <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
-                    <div class="form-group row">
-                      <div class="col-md-12 mb-3">
-                        <label class=""></label>
-                      <a href="#">
+              </div>
 
-                <img class="d-block mx-auto mb-4" src="assets/img/logo/logo.png" alt="" width="300" height="75">
-            </a>
-
-
-                  </div>
+              <div class="col-md-6 mb-3">
+                <label for="password">
+                  <h2>Password</h2>
+                </label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid password is required.
                 </div>
-                    <div class="form-group row">
-                      <div class="col-md-6 mb-3">
-                        <label class=""></label>
-                      <h2 class="center"> Doctor Login </h2>
-                  </div>
-                </div>
-
-                    <div class="form-group row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName"><h2>User name</h2></label>
-                            <input type="text" name="userName" class="form-control" id="userName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid user name is required.
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="password"><h2>Password</h2></label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Valid password is required.
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
 
 
 
 
-                    <div class="form-group row">
-                       <div class="offset-md-0 col-md-6">
-                           <button type="submit" class="btn btn-primary">
-                               Login
-                           </button>
-                           <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
+            <div class="form-group row">
+              <div class="offset-md-0 col-md-6">
+                <button type="submit" class="btn btn-primary">
+                  Login
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
 
-                       </div>
-                   </div>
-                   <br>
-                <br>
-                <div class="form-group row">
-                 <div class="offset-md-0 col-md-4">
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-group row">
+              <div class="offset-md-0 col-md-4">
                 <label for=""></label>
                 <h2>Not A Registered Doctor?</h2>
                 <br>
-                <label for=""><h2>Contact Your Hospital!!<h2></label>
+                <label for="">
+                  <h2>Contact Your Hospital!!<h2>
+                </label>
               </div>
             </div>
 
             <div class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; 2020 CodeMonk</p>
-            <ul class="list-inline">
+              <p class="mb-1">&copy; 2020 CodeMonk</p>
+              <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Privacy</a></li>
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>
-            </ul>
+              </ul>
 
             </div>
           </form>
-          </div>
+        </div>
 
 
-            </div>
-        </div>
-        </div>
+      </div>
+    </div>
+  </div>
 
 
 
