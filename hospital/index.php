@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-md-12 order-md-1">
                 <h4 class="mb-3">Hospital Login</h4>
-                <form class="needs-validation" novalidate method="POST" action="functionality/loginact.php">
+                <form class="needs-validation" novalidate method="POST" action="functionality/loginAct.php">
 
                     <div class="row">
                         <div class="col-md-6 mb-3">

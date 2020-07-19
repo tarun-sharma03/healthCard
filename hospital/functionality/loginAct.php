@@ -9,7 +9,7 @@ if (isset($_POST["submit"])) {
     if (sizeof($res) > 0) {
         $id = $res[0]['id'];
         $_SESSION["UID"] = $id;
-        doThis("UPDATE `hospitals` SET `lastLogin`= CURRENT_TIMESTAMP() WHERE `id` = '$id'");
+        doThis("UPDATE `hospitals` SET `lastLoginAt`= CURRENT_TIMESTAMP() WHERE `id` = '$id'");
 ?>
         <script>
             alert("Login Successful!!");

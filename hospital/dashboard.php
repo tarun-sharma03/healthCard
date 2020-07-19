@@ -7,7 +7,7 @@ if ($_SESSION["UID"] == NULL) {
 <?php
 }
 $id = $_SESSION["UID"];
-$res = getThis("SELECT `hospitalName`,`phoneNumber`,`emailAddress` FROM `hospitals` WHERE `id` = '$id'");
+$res = getThis("SELECT `hospitalName`,`contactNumber`,`emailAddress` FROM `hospitals` WHERE `id` = '$id'");
 $res = $res[0];
 ?>
 <!DOCTYPE html>
@@ -112,7 +112,7 @@ $res = $res[0];
                                     <strong>Contact :</strong>
                                 </div>
                                 <div class="col-4">
-                                    <span><?php echo $res['phoneNumber']; ?> </span>
+                                    <span><?php echo $res['contactNumber']; ?> </span>
                                     <!-------------------php---------------------------->
                                 </div>
                             </div>
