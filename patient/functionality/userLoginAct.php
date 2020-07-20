@@ -8,7 +8,6 @@ if (isset($_POST["submit"])) {
     $temp_query = "SELECT `id` FROM `patients` WHERE `username`='$username' AND `password` = '$password' AND `enabled` = '1'";
     $query = mysqli_query($con, $temp_query);
     $num = mysqli_num_rows($query);
-
     if ($num > 0) {
         $id = mysqli_fetch_array($query);
         $id = $id[0];
@@ -18,7 +17,7 @@ if (isset($_POST["submit"])) {
 ?>
         <script>
             alert("Login Successful!!");
-            window.location = "../dashboard.php";
+            window.location = "../../patient dashboard/patient-dashboard.html";
         </script>
     <?php
     } else {
