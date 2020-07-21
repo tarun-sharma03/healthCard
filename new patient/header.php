@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
     <!-- summernote -->
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -43,13 +44,19 @@
             <!-- SEARCH FORM -->
 
             <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <button type="button" class="btn btn-block btn-primary">Logout</button>
+
+            </ul>
+
+
         </nav>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index.html" class="brand-link">
+            <a href="index.php" class="brand-link">
                 <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8;" />
                 <span class="brand-text font-weight-light">MedCare</span>
             </a>
