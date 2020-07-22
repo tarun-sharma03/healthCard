@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>HackJaipur CodeMonk</title>
+  <title>CodeMonk</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="site.webmanifest" />
@@ -405,7 +405,7 @@
                     Contact Us <i class="ti-arrow-right"></i>
                   </a>
 
-                  <a href="https://www.worldometers.info/coronavirus/country/india/" target="_blank" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">
+                  <a href="https://www.covid19india.org/" target="_blank" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">
                     Corona Tracker <i class="ti-arrow-right"></i>
                   </a>
                 </div>
@@ -518,8 +518,9 @@
                     </p>
                     <p class="info1">
                       Tarun Kumar Dixit <br>
-                      Jayati Gumber <br>
-                      Dipanshu Bhola
+                      Ansh Garg <br>
+                      Taranjot Singh <br>
+                      Sukhwmit Kaur
                     </p>
                   </div>
                 </div>
