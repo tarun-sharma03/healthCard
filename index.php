@@ -100,7 +100,7 @@
     <div class="modal-dialog modal-lg" role="content">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
+          <h2 class="col-11 modal-title text-center"><strong>Hospital Login Form </strong></h2>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
         </div>
@@ -189,18 +189,19 @@
 
 
   <!--  modal for patient login -->
+
   <!-- use correct comments damn it -->
 
   <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="col-11 modal-title text-center"><strong> Login Form </strong></h2>
+          <h2 class="col-11 modal-title text-center"><strong>User Login Form </strong></h2>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
         </div>
         <div class="modal-body">
-          <form class="needs-validation" novalidate method="POST" action="#">
+          <form class="needs-validation" novalidate method="POST" action="patient/functionality/userLoginAct.php">
             <div class="form-group row">
               <div class="col-md-12 mb-3">
                 <label class=""></label>
@@ -241,12 +242,9 @@
               </div>
             </div>
 
-
-
-
             <div class="form-group row">
               <div class="offset-md-0 col-md-6">
-                <button type="submit" class="btn btn-primary">
+                <button name="submit" type="submit" class="btn btn-primary">
                   Login
                 </button>
 
