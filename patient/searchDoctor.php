@@ -1,6 +1,6 @@
 <?php include "header.php"; ?>
 <section class="content">
-    <form>
+    <form method="POST" action="submitQuery.php">
         <div class="col-sm-12">
             <div class="form-group">
                 <label><b>State</b></label>

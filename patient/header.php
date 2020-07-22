@@ -51,7 +51,7 @@ $dob = $_SESSION["dob"];
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-                <button type="button" class="btn btn-block btn-primary">Logout</button>
+                <a href="logout.php" class="btn btn-block btn-primary">Logout</a>
 
             </ul>
 
