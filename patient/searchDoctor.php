@@ -47,11 +47,17 @@
 
             <div class="form-group">
 
-                <button type="submit" class="btn btn-lg btn-success">
-                    <i class="fas fa-bookmark"></i> Submit Query
+                <button type="submit" class="btn btn-block btn-success btn-lg">
+                    <i class="fas fa-paper-plane"></i> Select Doctor
                 </button>
             </div>
 
+            <div class="form-group">
+
+                <a href="dashboard.php" class="btn btn-block btn-danger btn-lg">
+                    <i class="fas fa-times"></i> Cancel
+                </a>
+            </div>
 
 
         </div>
@@ -61,6 +67,8 @@
 <?php include "footer.php"; ?>
 
 
+
+<!-- do not touch this shit because even i don't know how it works -->
 <script type="text/javascript">
     $(document).ready(function() {
         $("#State_c").change(function() {
