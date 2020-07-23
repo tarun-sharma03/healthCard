@@ -24,7 +24,11 @@
                 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
+
     </div>
+
+    <h3>List of things in the form:</h3>
+    <h5>fullName, email, phone, emergency phone, address, dob, blood group, department, qualification, consultation fee!</h5>
 </section>
 </div>
 <?php include "footer.php" ?>
