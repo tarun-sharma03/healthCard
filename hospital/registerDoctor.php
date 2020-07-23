@@ -1,7 +1,30 @@
-<?php include "fxn.php"; ?>
 <?php include "header.php" ?>
 <section class="content">
-    <h3>Here comes the form!!</h3>
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Doctor Registration</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <form>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Full Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Full Name(Don't user Dr.)">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+
+            <div class="card-footer">
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
 </section>
 </div>
 <?php include "footer.php" ?>
