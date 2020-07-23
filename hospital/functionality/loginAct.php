@@ -5,9 +5,10 @@ if (isset($_POST["submit"])) {
     $username = $_POST["userName"];
     $password = $_POST["password"];
 
-    $res = getThis("SELECT `id` FROM `hospitals` WHERE `username` = '$username' AND `password` = '$password' AND `enabled` = '1'");
+    $res = getThis("SELECT * FROM `hospitals` WHERE `username` = '$username' AND `password` = '$password' AND `enabled` = '1'");
     if (sizeof($res) > 0) {
         $id = $res[0]['id'];
+        $_SESSION["hospitalName"] = $res[0]['hospitalName'];
         $_SESSION["UID"] = $id;
         doThis("UPDATE `hospitals` SET `lastLoginAt`= CURRENT_TIMESTAMP() WHERE `id` = '$id'");
 ?>
