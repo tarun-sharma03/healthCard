@@ -62,7 +62,7 @@
                     </td>
                     <td><?php echo $temp["description"]; ?></td>
                     <td>
-                      <a href="#" class="btn btn-primary">View</a>
+                      <a href="prescription.php?id=<?php echo $temp["id"]; ?>" class="btn btn-primary">View</a>
                     </td>
                   </tr>
                 <?php
