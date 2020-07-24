@@ -1,17 +1,15 @@
 <?php
-include "../config.php";
+include "../fxn.php";
 
 if (isset($_POST["submit"])) {
     $username = $_POST["userName"];
     $password = $_POST["password"];
 
-    $temp_query = "SELECT `id` FROM `doctors` WHERE `username`='$username' AND `password` = '$password' AND `enabled` = '1'";
-    $query = mysqli_query($con, $temp_query);
-    $num = mysqli_num_rows($query);
+    $res = getThis("SELECT `id` FROM `doctors` WHERE `username`='$username' AND `password` = '$password' AND `enabled` = '1'");
 
-    if ($num > 0) {
-        $id = mysqli_fetch_array($query);
-        $id = $id[0];
+    if ($res) {
+        $res = $res[0];
+        $id = $res["id"];
         $_SESSION["UID"] = $id;
         $temp_update_query = "UPDATE `doctors` SET `lastLoginAt` = CURRENT_TIMESTAMP() WHERE `id` = '$id' ";
         $update_query = mysqli_query($con, $temp_update_query);
@@ -25,7 +23,7 @@ if (isset($_POST["submit"])) {
     ?>
         <script>
             alert("Wrong Username/Password!!");
-            window.location = "../index.php";
+            // window.location = "../index.php";
         </script>
 <?php
     }
