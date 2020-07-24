@@ -20,6 +20,7 @@
 
 ### July 24, 2020 -> (3)
 CREATE TABLE `prescription` ( `id` INT NOT NULL AUTO_INCREMENT , `queryID` INT NOT NULL , `doctorID` INT NOT NULL , `diagnosis` TEXT NOT NULL , `diet` TEXT NOT NULL , `specialAdvice` TEXT NOT NULL , `labTests` TEXT NOT NULL , `medicine` TEXT NOT NULL , `instruction` TEXT NOT NULL , `dosage` TEXT NOT NULL , `generatedAt` TEXT NOT NULL , `enabled` INT(1) NOT NULL DEFAULT '1' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+ALTER TABLE `queries` ADD `prescriptionID` INT NOT NULL DEFAULT '0' AFTER `doctorID`;
 
 ### July 24, 2020 -> (3)
 CREATE TABLE `queries` ( `id` INT NOT NULL AUTO_INCREMENT , `patientID` INT NOT NULL , `doctorID` INT NOT NULL , `symptoms` TEXT NOT NULL , `description` TEXT NOT NULL , `generatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `readAt` TIMESTAMP NULL DEFAULT NULL , `enabled` INT(1) NOT NULL DEFAULT '1' , PRIMARY KEY (`id`)) ENGINE = InnoDB;

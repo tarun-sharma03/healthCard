@@ -1,6 +1,9 @@
 <?php include "header.php" ?>
 <section class="content">
 
+    <?php $id = $_SESSION["UID"];
+    $data = getThis("SELECT * FROM `queries` WHERE `doctorID`='$id' and `enabled`='2' ORDER BY `generatedAt` ASC ");
+    ?>
 
 
     <!-- table goes here  -->
@@ -25,15 +28,47 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>22/22/22</td>
-                                    <td>User Name</td>
-                                    <td>City, State
-                                    </td>
-                                    <td>test,test,test,test,tests,test,test</td>
-                                    <td> This is a problem....</td>
-                                    <td>View</td>
-                                </tr>
+                                <?php
+                                for ($i = 0; $i < sizeof($data); $i++) {
+                                    $temp = $data[$i];
+                                ?>
+                                    <tr>
+                                        <td><?php echo substr($temp["generatedAt"], 0, 10); ?> </td>
+                                        <td>
+                                            <?php
+                                            $pid = $temp["patientID"];
+                                            $details = getThis("SELECT `id`,`fullName`,`cityID`,`stateID` FROM `patients` WHERE `id`= '$pid'");
+                                            $name = $details[0]["fullName"];
+                                            echo $name;
+                                            ?>
+                                        </td>
+                                        <td>
+                                            <?php
+                                            $city = $details[0]['cityID'];
+                                            $cityName = getThis("SELECT `name` from `cities` WHERE `id`='$city'");
+                                            $cityName = $cityName[0]['name'];
+                                            $state = $details[0]['stateID'];
+                                            $stateName = getThis("SELECT `name` from `states` WHERE `id`='$state'");
+                                            $stateName = $stateName[0]['name'];
+
+                                            echo $cityName . ", " . $stateName; ?>
+                                        </td>
+                                        <td>
+                                            <?php $symptoms = $temp["symptoms"];
+                                            $symptoms = unserialize($symptoms);
+                                            for ($x = 0; $x < min(sizeof($symptoms), 5); $x++) {
+                                                echo $symptoms[$x] . ", ";
+                                            }
+                                            ?>
+                                        </td>
+                                        <td><?php echo $temp["description"]; ?></td>
+                                        <td>
+                                            <a href="viewDetails.php?id=<?php echo $temp["id"]; ?>" class="btn btn-primary">View</a>
+                                        </td>
+                                    </tr>
+                                <?php
+                                }
+                                ?>
 
                             </tbody>
                         </table>

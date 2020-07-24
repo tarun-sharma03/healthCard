@@ -17,8 +17,8 @@ if (isset($_POST["submit"])) {
     $queryId = $_POST["queryId"];
     $doctorId = $_POST["doctorId"];
 
-    $temp = doThis("UPDATE `queries` SET `readAt` = CURRENT_TIMESTAMP(), `enabled`='2' WHERE `id`= '$queryId' ");
     $res = doThis("INSERT INTO `prescription`(`queryID`, `doctorID`, `diagnosis`, `diet`, `specialAdvice`, `labTests`, `medicine`, `instruction`, `dosage`, `generatedAt`) VALUES( '$queryId', '$doctorId', '$diagnosis', '$diet', '$specialAdvice', '$labTests', '$medicine', '$instruction','$dose', CURRENT_TIMESTAMP() )");
+    $temp = doThis("UPDATE `queries` SET `readAt` = CURRENT_TIMESTAMP(), `enabled`='2', `prescriptionID`='$res' WHERE `id`= '$queryId' ");
     if ($temp && $res) {
 ?>
         <script>
