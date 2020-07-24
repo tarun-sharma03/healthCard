@@ -18,6 +18,9 @@
 #############################################################################
 #############################################################################
 
+### July 24, 2020 -> (3)
+CREATE TABLE `queries` ( `id` INT NOT NULL AUTO_INCREMENT , `patientID` INT NOT NULL , `doctorID` INT NOT NULL , `symptoms` TEXT NOT NULL , `description` TEXT NOT NULL , `generatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `readAt` TIMESTAMP NULL DEFAULT NULL , `enabled` INT(1) NOT NULL DEFAULT '1' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
 ### July 23, 2020 -> (3)
 CREATE TABLE `doctors` ( `id` INT NOT NULL AUTO_INCREMENT , `hospitalID` INT NOT NULL , `fullName` TEXT NOT NULL , `emailAddress` TEXT NOT NULL , `phoneNumber` TEXT NOT NULL , `emergencyPhoneNumber` TEXT NOT NULL , `address` TEXT NOT NULL , `dob` TIMESTAMP NULL DEFAULT NULL , `bloodGroup` TEXT NOT NULL , `department` TEXT NOT NULL , `qualification` TEXT NOT NULL , `consultationFee` TEXT NOT NULL , `username` TEXT NOT NULL , `password` TEXT NOT NULL , `generatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `lastLoginAt` TIMESTAMP NULL DEFAULT NULL , `enabled` INT(1) NOT NULL DEFAULT '1' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
 

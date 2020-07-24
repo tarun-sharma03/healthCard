@@ -34,6 +34,10 @@ $name = $res["fullName"];
     <!-- summernote -->
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
 
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -52,7 +56,7 @@ $name = $res["fullName"];
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-                <button type="button" class="btn btn-block btn-primary">Logout</button>
+                <a href="logout.php" class="btn btn-block btn-primary">Logout</a>
 
             </ul>
 
@@ -64,7 +68,7 @@ $name = $res["fullName"];
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="index.php" class="brand-link">
-                <img src="dist/img/logo.jpeg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8;" />
+                <img src="dist/img/logo.jpeg" alt="MedCare Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8;" />
                 <span class="brand-text font-weight-light">MedCare</span>
             </a>
 
@@ -126,7 +130,7 @@ $name = $res["fullName"];
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="previousRecords.php" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     View Records
