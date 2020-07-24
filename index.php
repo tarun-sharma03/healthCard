@@ -292,7 +292,7 @@
 
         </div>
         <div class="modal-body">
-          <form class="needs-validation" novalidate method="POST" action="functionality/userLoginAct.php">
+          <form class="needs-validation" novalidate method="POST" action="doctor/functionality/doctorloginact.php">
             <div class="form-group row">
               <div class="col-md-12 mb-3">
                 <label class=""></label>
@@ -338,7 +338,7 @@
 
             <div class="form-group row">
               <div class="offset-md-0 col-md-6">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" name="submit" class="btn btn-primary">
                   Login
                 </button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel</button>
