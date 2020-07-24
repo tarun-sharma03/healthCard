@@ -6,6 +6,7 @@ $details = $details[0];
 $pid = $details["patientID"];
 $patientDetails = getThis("SELECT `fullName`, `dob`, `phoneNumber`,`bloodGroup`, `gender`, `emailAddress`, `cityID`, `stateID`, `ongoingMedication`, `allergies` FROM `patients` WHERE `id`='$pid'");
 $patientDetails = $patientDetails[0];
+$doctorId = $_SESSION["UID"];
 ?>
 <section class="content">
     <div class="container-fluid">
@@ -140,6 +141,7 @@ $patientDetails = $patientDetails[0];
 
 
                             <input type="hidden" name="queryId" value="<?php echo $tempId; ?>" />
+                            <input type="hidden" name="doctorId" value="<?php echo $doctorId; ?>" />
 
                             <button type="submit" name="submit" class="btn btn-block btn-primary"> Submit </button>
                             <button type="submit" name="submit" class="btn btn-block btn-danger"> Cancel </button>
