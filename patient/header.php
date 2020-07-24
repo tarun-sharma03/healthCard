@@ -133,7 +133,7 @@ $dob = $_SESSION["dob"];
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
+                            <a href="profileUpdate.php" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Update Profile
