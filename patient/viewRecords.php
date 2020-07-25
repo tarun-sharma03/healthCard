@@ -26,8 +26,8 @@ $tempData = getThis("SELECT `id`,`prescriptionID`, `doctorID`, `symptoms`, `desc
                         </thead>
                         <tbody>
                             <?php
-                            for ($x = 0; $x < sizeof($tempData); $x++) {
-                                $temp = $tempData[$x];
+                            for ($zz = 0; $zz < sizeof($tempData); $zz++) {
+                                $temp = $tempData[$zz];
                             ?>
                                 <tr>
                                     <th>

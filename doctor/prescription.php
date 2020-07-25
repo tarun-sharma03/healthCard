@@ -144,7 +144,7 @@ $doctorId = $_SESSION["UID"];
                             <input type="hidden" name="doctorId" value="<?php echo $doctorId; ?>" />
 
                             <button type="submit" name="submit" class="btn btn-block btn-primary"> Submit </button>
-                            <button type="submit" name="submit" class="btn btn-block btn-danger"> Cancel </button>
+                            <a href="dashboard.php" class="btn btn-block btn-danger"> Cancel </a>
                         </form>
                     </div>
                 </div>
