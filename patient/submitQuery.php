@@ -22,6 +22,8 @@
         <input type="hidden" value="<?php echo $doctorId; ?>" name="doctorId">
         <br><br>
         <button type="submit" name="submit" class="btn btn-block btn-primary"> Submit </button>
+        <a href="dashboard.php" class="btn btn-block btn-danger"> Cancel </a>
+
     </form>
 </section>
 </div>

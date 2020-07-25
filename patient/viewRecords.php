@@ -30,7 +30,7 @@ $tempData = getThis("SELECT `id`,`prescriptionID`, `doctorID`, `symptoms`, `desc
                                 $temp = $tempData[$x];
                             ?>
                                 <tr>
-                                    <td>
+                                    <th>
                                         <?php
                                         $did = $temp["doctorID"];
                                         $doctorDetails = getThis("SELECT `hospitalID`, `fullName`,  `department`, `qualification` FROM `doctors` WHERE `id`='$did'");
@@ -38,7 +38,7 @@ $tempData = getThis("SELECT `id`,`prescriptionID`, `doctorID`, `symptoms`, `desc
                                         echo $doctorDetails["fullName"] . ", " . $doctorDetails["qualification"] . " (" . $doctorDetails["department"] . ")";
                                         ?>
 
-                                    </td>
+                                    </th>
 
                                     <th><?php
                                         $hid = $doctorDetails["hospitalID"];
