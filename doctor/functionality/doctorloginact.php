@@ -23,7 +23,7 @@ if (isset($_POST["submit"])) {
     ?>
         <script>
             alert("Wrong Username/Password!!");
-            // window.location = "../index.php";
+            window.location = "../index.php";
         </script>
 <?php
     }

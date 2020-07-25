@@ -1,74 +1,79 @@
-<?php include "header.php" ?>
+<?php include "header.php"; ?>
+<!-- table goes here  -->
+<?php
+$doctorDetails = getThis("SELECT `id`,`fullName`,`department`, `qualification`, `generatedAt` FROM `doctors` WHERE `hospitalID`='$id' AND `enabled`='1'");
+?>
 <section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">All the Doctors</h3>
+          </div>
 
-	<style>
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
-}
-
-th, td {
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2}
-</style>
-<div style="overflow-x:auto;">
-  <table>
-  	<h2 style="text-align: center;">Doctor Details</h2>
-    <tr>
-      <th>Doctor Name</th>
-      <th>Registered On</th>
-      <th>No of Patients Attended</th>
-      <th>More Info</th>
-      <th>More Info</th>
-      
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>23/12/2000</td>
-      <td>50</td>
-      <td>add info</td>
-      <td>add info</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>12/11/2000</td>
-      <td>94</td>
-      <td>add info</td>
-      <td>add info</td>
-    </tr>
-    <tr>
-      <td>Adam</td>
-      <td>22/10/2000</td>
-      <td>67</td>
-      <td>add info</td>
-      <td>add info</td>
-    </tr>
-  </table>
-</div>
+          <div class="card-body">
+            <table id="example2" class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Date Joined</th>
+                  <th>Doctor Name</th>
+                  <th>Department</th>
+                  <th>Total Consultation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                for ($x = 0; $x < sizeof($doctorDetails); $x++) {
+                  $temp = $doctorDetails[$x];
+                ?>
+                  <tr>
+                    <td>
+                      <?php echo substr($temp["generatedAt"], 0, 10); ?>
+                    </td>
+                    <td>
+                      <?php echo $temp["fullName"] . " (" . $temp["qualification"] . ")"; ?>
+                    </td>
+                    <td>
+                      <?php echo $temp["department"]; ?>
+                    </td>
+                    <td>
+                      <?php
+                      $did = $temp["id"];
+                      $num = getThis("SELECT * FROM `prescription` WHERE `doctorID`='$did'");
+                      $num = sizeof($num);
+                      echo $num;
+                      ?>
+                    </td>
+                  </tr>
+                <?php } ?>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-	<?php include "footer.php" ?>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#State_c").change(function() {
-            var StateID = $("#State_c").val();
-            $.ajax({
-                url: 'worldData.php',
-                method: 'post',
-                data: 'State=' + StateID
-            }).done(function(states) {
-                cities = JSON.parse(states);
-                $('#City_c').empty();
-                $('#City_c').append('<option disabled selected>Select City</option>');
-                cities.forEach(function(city) {
-                    $('#City_c').append('<option value=' + city.id + '>' + city.name + '</option>');
-                })
-                $('#City_c').append('<option value=0>My option is not listed</option>');
-            })
-        });
-    })
+</div>
+<?php include "footer.php" ?>
+
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+
+
+<script>
+  $(function() {
+    $('#example2').DataTable({
+      "paging": false,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": false,
+      "info": false,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
 </script>

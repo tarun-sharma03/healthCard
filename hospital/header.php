@@ -60,8 +60,8 @@ $name = $_SESSION["hospitalName"];
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index.php" class="brand-link">
-                <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8;" />
+            <a href="dashboard.php" class="brand-link">
+                <img src="dist/img/logo.jpeg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8;" />
                 <span class="brand-text font-weight-light">MedCare</span>
             </a>
 
@@ -125,21 +125,14 @@ $name = $_SESSION["hospitalName"];
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="alldoctors.php" class="nav-link">
+                            <a href="allDoctors.php" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     All Doctors
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    View Prescriptions
-                                </p>
-                            </a>
-                        </li>
+
                         <!-- <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
