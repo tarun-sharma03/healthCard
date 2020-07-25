@@ -1,4 +1,13 @@
 <?php include "fxn.php";
+
+if (isset($_SESSION["UID"]) == null) {
+?>
+    <script>
+        window.location = "logout.php";
+    </script>
+<?php
+}
+
 $id = $_SESSION["UID"];
 $res = getThis("SELECT * FROM `doctors` WHERE `id`='$id'");
 $res = $res[0];

@@ -1,4 +1,13 @@
 <?php include "fxn.php";
+
+if (isset($_SESSION["UID"]) == null) {
+?>
+    <script>
+        window.location = "logout.php";
+    </script>
+<?php
+}
+
 $name = $_SESSION["fullName"];
 $id = $_SESSION["UID"];
 $dob = $_SESSION["dob"];
